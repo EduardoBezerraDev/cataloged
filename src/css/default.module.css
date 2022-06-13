@@ -1,0 +1,10 @@
+.borderDefault {
+    border-width: 0.3px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: grey 3px 2px 6px;
+}
+
+.ButtonBorderDefault {
+    border-radius: 5px;
+}
