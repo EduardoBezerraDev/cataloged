@@ -14,7 +14,7 @@ const FloatingButton = (props) => {
   };
 
   return (
-    <div style={{ position: "absolute", right: 30 }}>
+    <div style={{ position: "absolute", right: 23 }}>
       <Button
         type="primary"
         className={styles.ButtonBorderDefault}
@@ -27,6 +27,7 @@ const FloatingButton = (props) => {
         placement="top"
         onClose={onClose}
         visible={visible}
+        height={"100%"}
       >
         {props.children}
       </Drawer>

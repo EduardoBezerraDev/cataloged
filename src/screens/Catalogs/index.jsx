@@ -45,7 +45,8 @@ export default function Catalogs() {
           </>
         ))}
       </List>
-      <FloatingButton title={"Novo catálogo"} />
+      <FloatingButton title={"Novo catálogo"}  />
+
     </>
   );
 }

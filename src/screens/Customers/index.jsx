@@ -8,6 +8,7 @@ import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import styles from "../../css/default.module.css";
 import FloatingButton from "../../components/FloatingButton";
+import Add from "./add";
 
 export default function Customers() {
   const fakeCustomers = [
@@ -48,11 +49,11 @@ export default function Customers() {
                 secondary={
                   <Fragment>
                     <p>
-                      Endereço: {customer.address}
+                      Endereço: <strong>{customer.address}</strong>
                       <br />
-                      Número: {customer.number}
+                      Número: <strong>{customer.number}</strong>
                       <br />
-                      Complemento: {customer.complement}
+                      Complemento: <strong>{customer.complement}</strong>
                     </p>
                     <Typography
                       sx={{ display: "inline" }}
@@ -61,7 +62,8 @@ export default function Customers() {
                       color="text.primary"
                     >
                       <Divider style={{ marginBottom: 10 }} />
-                      Ultima compra em:<strong> {customer.lastPurchase}</strong>
+                      <i>Ultima compra em:</i>{" "}
+                      <strong> {customer.lastPurchase}</strong>
                     </Typography>
                   </Fragment>
                 }
@@ -71,7 +73,9 @@ export default function Customers() {
           </>
         ))}
       </List>
-      <FloatingButton title={"Novo cliente"} />
+      <FloatingButton title={"Novo cliente"}>
+        <Add />
+      </FloatingButton>
     </>
   );
 }
