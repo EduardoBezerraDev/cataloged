@@ -13,6 +13,7 @@ import Add from "./add";
 export default function Customers() {
   const fakeCustomers = [
     {
+      id: 1,
       firstName: "Eduardo",
       lastName: "Bezerra",
       lastPurchase: "05/01/2021",
@@ -24,6 +25,7 @@ export default function Customers() {
       complement: "Casa 8",
     },
     {
+      id: 2,
       firstName: "Felipe",
       lastName: "Araujo",
       lastPurchase: "09/04/2021",
@@ -40,7 +42,11 @@ export default function Customers() {
       <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
         {fakeCustomers.map((customer) => (
           <>
-            <ListItem className={styles.borderDefault} alignItems="flex-start">
+            <ListItem
+              className={styles.borderDefault}
+              alignItems="flex-start"
+              key={customer.id}
+            >
               <ListItemAvatar>
                 <Avatar alt={customer.firstName} src={"1"} />
               </ListItemAvatar>

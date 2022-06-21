@@ -60,7 +60,7 @@ export default function Profile() {
           <Text color="#05c46b" fontSize={"25pt"} fontWeight={"bolder"}>
             1000
           </Text>
-          <Text color={"grey"} fontSize={"17pt"} fontWeight={"bolder"}>
+          <Text color={"grey"} fontSize={"14pt"} fontWeight={"bolder"}>
             Vendas
           </Text>
         </Col>
@@ -68,7 +68,7 @@ export default function Profile() {
           <Text color="#ff3f34" fontSize={"25pt"} fontWeight={"bolder"}>
             40
           </Text>
-          <Text color={"grey"} fontSize={"17pt"} fontWeight={"bolder"}>
+          <Text color={"grey"} fontSize={"14pt"} fontWeight={"bolder"}>
             Clientes
           </Text>
         </Col>
@@ -76,7 +76,7 @@ export default function Profile() {
           <Text color="#485460" fontSize={"25pt"} fontWeight={"bolder"}>
             10
           </Text>
-          <Text color={"grey"} fontSize={"17pt"} fontWeight={"bolder"}>
+          <Text color={"grey"} fontSize={"14pt"} fontWeight={"bolder"}>
             Catálogos
           </Text>
         </Col>

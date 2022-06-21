@@ -3,17 +3,21 @@ const endPoint = "https://servicodados.ibge.gov.br/api/v1";
 
 const getStates = (state = null) => {
   const res = axios.get(
-    `${endPoint}/localidades/estados?orderBy=nome/${state ? state : ""}`
+    `${endPoint}/localidades/estados/${state ? state : ""}?orderBy=nome/`
   );
   return res;
 };
-const getCountysByState = (state = null, county = null) => {
+const getCitiesByState = (state = null) => {
   const res = axios.get(
-    `${endPoint}/localidades/estados/${state}/municipios/${
-      county ? county : ""
-    }`
+    `${endPoint}/localidades/estados/${state}/municipios/`
+  );
+  return res;
+};
+const getCity = (city = null) => {
+  const res = axios.get(
+    `${endPoint}/localidades/municipios/${city}/`
   );
   return res;
 };
 
-export { getStates, getCountysByState };
+export { getStates, getCitiesByState, getCity };
